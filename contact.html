@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - South Texas Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>South Texas Bank</span>
+                </a>
+
+                <nav class="nav-desktop">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="open-account.html" class="btn btn-outline">Open Account</a>
+                    <a href="login.html" class="btn btn-primary">Login</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="nav-mobile" id="mobileNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="active">Contact</a>
+            <div class="mobile-actions">
+                <a href="open-account.html" class="btn btn-outline">Open Account</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>Contact Us</h1>
+                    <p>We're here to help with all your banking needs. Reach out to us anytime.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Message (Hidden by default) -->
+        <div class="success-message" id="contactSuccessMessage" style="display: none;">
+            <div class="container">
+                <div class="success-card">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h2>Message Sent!</h2>
+                    <p>Thank you for contacting South Texas Bank. We've received your message and will respond within 1 business day.</p>
+                    <div class="next-steps">
+                        <h3>What's Next?</h3>
+                        <p>A member of our customer service team will review your inquiry and contact you via email or phone based on your preference.</p>
+                    </div>
+                    <button onclick="location.reload()" class="btn btn-primary">Send Another Message</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Content -->
+        <div class="contact-content" id="contactContent">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <h2>Get in Touch</h2>
+                        <p>Our friendly team is ready to assist you with any questions or concerns.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-method-info">
+                                    <h3>Phone Support</h3>
+                                    <p>Speak with a banking specialist</p>
+                                    <p class="contact-detail">(210) 555-0123</p>
+                                    <p class="contact-hours">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-method-info">
+                                    <h3>Email Support</h3>
+                                    <p>Send us a detailed message</p>
+                                    <p class="contact-detail">info@southtexasbank.com</p>
+                                    <p class="contact-hours">Response within 24 hours</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-method-info">
+                                    <h3>Visit Our Branch</h3>
+                                    <p>123 Main Street<br>San Antonio, TX 78201</p>
+                                    <p class="contact-hours">Lobby Hours: Mon-Fri 9AM-4PM, Sat 9AM-1PM</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="contact-method-info">
+                                    <h3>Live Chat</h3>
+                                    <p>Chat with us online</p>
+                                    <button class="btn btn-primary btn-sm">Start Chat</button>
+                                    <p class="contact-hours">Available during business hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <div class="form-card">
+                            <div class="form-header">
+                                <h2>Send us a Message</h2>
+                                <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                            </div>
+
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="contactName">Full Name *</label>
+                                    <input type="text" id="contactName" name="name" placeholder="Enter your full name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactEmail">Email Address *</label>
+                                    <input type="email" id="contactEmail" name="email" placeholder="Enter your email address" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inquiryType">Inquiry Type *</label>
+                                    <select id="inquiryType" name="inquiryType" required>
+                                        <option value="">Select inquiry type</option>
+                                        <option value="general">General Information</option>
+                                        <option value="account">Account Support</option>
+                                        <option value="loans">Loans & Credit</option>
+                                        <option value="business">Business Banking</option>
+                                        <option value="technical">Online Banking Support</option>
+                                        <option value="complaint">File a Complaint</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactMessage">Message *</label>
+                                    <textarea id="contactMessage" name="message" rows="5" placeholder="Please describe your inquiry in detail..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg btn-full">
+                                    Send Message
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branch Hours -->
+                <div class="branch-hours-section">
+                    <div class="branch-hours-card">
+                        <div class="branch-hours-header">
+                            <h2>Branch Hours</h2>
+                            <p>Visit us at our convenient location</p>
+                        </div>
+                        <div class="hours-grid">
+                            <div class="hours-column">
+                                <h3><i class="fas fa-clock"></i> Lobby Hours</h3>
+                                <div class="hours-list">
+                                    <div class="hours-item">
+                                        <span>Monday - Thursday</span>
+                                        <span>9:00 AM - 4:00 PM</span>
+                                    </div>
+                                    <div class="hours-item">
+                                        <span>Friday</span>
+                                        <span>9:00 AM - 6:00 PM</span>
+                                    </div>
+                                    <div class="hours-item">
+                                        <span>Saturday</span>
+                                        <span>9:00 AM - 1:00 PM</span>
+                                    </div>
+                                    <div class="hours-item">
+                                        <span>Sunday</span>
+                                        <span>Closed</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hours-column">
+                                <h3><i class="fas fa-clock"></i> Drive-Thru Hours</h3>
+                                <div class="hours-list">
+                                    <div class="hours-item">
+                                        <span>Monday - Friday</span>
+                                        <span>8:00 AM - 6:00 PM</span>
+                                    </div>
+                                    <div class="hours-item">
+                                        <span>Saturday</span>
+                                        <span>8:00 AM - 2:00 PM</span>
+                                    </div>
+                                    <div class="hours-item">
+                                        <span>Sunday</span>
+                                        <span>Closed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-section">
+                    <div class="map-card">
+                        <div class="map-header">
+                            <h2>Find Us</h2>
+                            <p>Located in the heart of San Antonio</p>
+                        </div>
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Interactive Map</p>
+                            <p>123 Main Street, San Antonio, TX 78201</p>
+                            <p class="map-subtitle">Google Maps Integration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>South Texas Bank</span>
+                    </div>
+                    <p>Rooted in Community. Built on Trust. Your local banking partner since 1985.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="open-account.html">Open Account</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><span>Personal Banking</span></li>
+                        <li><span>Business Banking</span></li>
+                        <li><span>Loans & Credit</span></li>
+                        <li><span>Online Banking</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Main St, San Antonio, TX 78201</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(210) 555-0123</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@southtexasbank.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span>© 2024 South Texas Bank. All rights reserved.</span>
+                    <span class="fdic-badge">FDIC Insured</span>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
